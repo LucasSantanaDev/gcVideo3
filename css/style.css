@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Quicksand:wght@600&display=swap");
+* {
+  font-family: Quicksand, "Sans-serif";
+  color: #f9f4e3;
+}
+
+body {
+  background-color: #00050e;
+}
+
+.logoNav {
+  width: 150px;
+  height: 90px;
+  margin-right: 60px;
+  margin-left: 70px;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px white;
+  border-radius: 2px;
+  font-family: Quicksand, "Sans-serif";
+  transition: border-bottom 0.5, border-radius 0.5;
+}
+.nav-item:hover {
+  border-bottom: solid 1px #d4ddb1;
+  border-radius: 4px;
+}
+
+.btUpload {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #f9f4e3;
+  margin-right: 2px;
+  width: 300px;
+}
+.btUpload #upLogo {
+  margin-left: 20px;
+}
+.btUpload #uploadBt {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  color: #f9f4e3;
+  font-family: Quicksand, "Sans-serif";
+}
+.btUpload #uploadBt:hover {
+  color: #d4ddb1;
+}
+
+#txtBusca {
+  width: 300px;
+  background-color: transparent;
+  color: #f9f4e3;
+  text-align: center;
+  font-family: Quicksand, "Sans-serif";
+}
+
+#txtBusca::placeholder {
+  color: #5b5a5a;
+}
+
+#btBuscar {
+  margin-right: 70px;
+  width: 150px;
+}
+
+.footer {
+  background-color: #00050e;
+  height: 10vh;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer #linkGc {
+  text-decoration: none;
+  color: white;
+}
+.footer #linkGc:hover {
+  color: #d4ddb1;
+}
+.footer .copyGC {
+  color: white;
+}
+
+.container {
+  padding-top: 2%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.divSwitch {
+  display: flex;
+  justify-content: end;
+  padding-right: 5%;
+  color: #f9f4e3;
+}
+
+.main-video-content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+  box-shadow: 0 1px 2px black;
+}
+
+.main-video-content video {
+  width: 68%;
+}
+
+.main-video-content {
+  width: 70%;
+  border-radius: 15px;
+  background-color: #0c151d;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.principal-video {
+  width: 95%;
+  height: 80%;
+}
+
+.playlist {
+  display: flex;
+  height: 70vh;
+  flex-direction: column;
+  gap: 10px;
+  overflow: auto;
+  max-height: 100vh;
+  padding: 2px;
+  background-color: #0c151d;
+  border-radius: 15px;
+}
+
+.playlist::-webkit-scrollbar {
+  width: 6px;
+}
+
+.playlist::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #f9f4e3;
+}
+
+.playlist-video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  box-shadow: 0 1px 2px #1c140d;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.texto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1%;
+  height: 5vh;
+}
+.texto #btLoja {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 8px;
+  display: none;
+}
+
+.dialog {
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+  width: 80%;
+  background-color: #00050e;
+}
+.dialog .titleDialog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: underline;
+  font-family: Quicksand, "Sans-serif";
+}
+.dialog .dialogText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat, "sans-serif";
+  font-size: 20px;
+  color: white;
+  padding: 2%;
+}
+.dialog .dialogText .a {
+  font-family: Quicksand, "Sans-serif";
+}
+.dialog .btClose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  background-color: transparent;
+  font-family: Quicksand, "Sans-serif";
+  font-size: 20px;
+  color: white;
+  border: none;
+  margin-left: 3.2%;
+}
+.dialog .btClose:hover {
+  color: gray;
+}
+
+.btList {
+  background-color: transparent;
+  color: #f9f4e3;
+  border: solid 1px white;
+  border-radius: 8px;
+  width: 95%;
+  padding: 1%;
+  margin: 1%;
+  font-size: 20px;
+  font-family: Quicksand, "Sans-serif";
+}
+.btList:hover {
+  background-color: white;
+  color: #00050e;
+}
+
+.dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.allVideosPlaylist {
+  width: 80%;
+  height: 60%;
+}
+
+.playlist-video video {
+  width: 80%;
+  height: 60%;
+}
+
+.playlist-video active {
+  width: 80%;
+  height: 60%;
+}
+
+.playlist-video-info {
+  color: #f9f4e3;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: Quicksand, "Sans-serif";
+}
+
+.main-info {
+  color: #f9f4e3;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: Quicksand, "Sans-serif";
+  width: 95%;
+}
+
+.container02 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.logInArea {
+  margin-top: -10%;
+  height: 60vh;
+  text-align: center;
+  width: 600px;
+  border: 2px solid #f9f4e3;
+  padding: 3%;
+  border-radius: 10px;
+}
+.logInArea .title {
+  margin-bottom: 20%;
+}
+.logInArea #btAcesso {
+  text-align: center;
+  width: 100%;
+  background-color: transparent;
+  color: #f9f4e3;
+}
+
+#txtUser::placeholder, #txtPass::placeholder {
+  color: #00050e;
+}
+
+#aviso {
+  display: none;
+  margin-bottom: 500px;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.container04 {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+
+#title {
+  margin-top: 5%;
+  width: 100%;
+}
+
+.submitArea {
+  border: 2px solid #f9f4e3;
+  border-radius: 8px;
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.submitArea #txtNomeVideo, .submitArea #txtUrlVideo, .submitArea #txtTagsVideo, .submitArea #txtCategoria {
+  width: 22%;
+  height: 45%;
+  border: solid 2px #f9f4e3;
+  border-radius: 4px;
+  color: #00050e;
+}
+.submitArea #txtNomeVideo::placeholder, .submitArea #txtUrlVideo::placeholder, .submitArea #txtTagsVideo::placeholder {
+  color: #00050e;
+}
+.submitArea #btEnviar {
+  border: solid 2px #f9f4e3;
+  border-radius: 4px;
+  background-color: transparent;
+  width: 10%;
+}
+
+/*# sourceMappingURL=style.css.map */

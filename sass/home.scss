@@ -1,0 +1,194 @@
+.container{
+  padding-top: 2%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+.divSwitch{
+  //background-color: red;
+  display: flex;
+  justify-content: end;
+  padding-right: 5%;
+  color: $second-color;
+}
+
+.main-video-content {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    box-shadow: 0 1px 2px black;
+  }
+  
+  .main-video-content video {
+    width: 68%;
+    
+
+  }
+  .main-video-content {
+    width: 70%;    
+    border-radius: 15px;
+    background-color: $fourth-color;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .principal-video{
+    width: 95%;
+    height: 80%;
+    
+  }
+  
+  .playlist {
+    //width: 39%;
+    //margin-left: 63.5%;
+    display: flex;
+    height: 70vh;
+    flex-direction: column;
+    gap: 10px;
+    overflow: auto;
+    max-height: 100vh;
+    padding: 2px;
+    background-color: $fourth-color;
+    border-radius: 15px;
+  }
+  
+  .playlist::-webkit-scrollbar {
+    width: 6px;
+  }
+  .playlist::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color:$second-color; 
+  }
+  
+  .playlist-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    box-shadow: 0 1px 2px #1c140d;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  // .active {
+  //   width: 80%;
+  //   height: 60%;
+  //   background-color: $general-color;
+  //   color: white;
+  //   padding-top: 2%;
+  // }
+    .texto{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      
+      padding: 1%;
+      height: 5vh;
+      #btLoja{
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 8px;
+        display: none;
+      }
+      
+    }
+  .dialog {
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1em rgb(0 0 0/ 0.3);
+    width: 80%;
+    background-color:  $general-color;
+    
+    .titleDialog {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      //font-family: Montserrat, 'sans-serif';
+      color: white;
+      text-decoration: underline;
+      font-family: Quicksand, 'Sans-serif';
+    }
+    .dialogText {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Montserrat, 'sans-serif';
+      font-size: 20px;
+      color: white;
+      padding: 2%;
+      .a{
+        font-family: Quicksand, 'Sans-serif';
+      }
+    }
+    .btClose{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 95%;
+      background-color: transparent;
+      font-family: Quicksand, 'Sans-serif';
+      font-size: 20px;
+      color: white;
+      border: none;
+      margin-left: 3.2%;
+      &:hover{
+        color: gray;
+      }
+    }
+  }
+
+  
+  .btList{
+    background-color: transparent;
+    color: $second-color;
+    border: solid 1px white;
+    border-radius: 8px;
+    width: 95%;
+    padding: 1%;
+    margin: 1%;
+    font-size: 20px;    
+    font-family: Quicksand, 'Sans-serif';
+    &:hover{
+      background-color: white;
+      color: $general-color;
+    }
+  }
+  .dialog::backdrop {
+    background-color: rgb(0 0 0/ 0.5);
+  }
+  
+
+  .allVideosPlaylist{
+    width: 80%;
+    height: 60%;
+  }
+  
+  .playlist-video video{
+    width: 80%;
+    height: 60%;
+  }
+  .playlist-video active{
+    width: 80%;
+    height: 60%;
+  }
+  
+  .playlist-video-info{
+    color:$second-color;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: Quicksand, 'Sans-serif';
+    
+  }
+  .main-info{
+    color:$second-color;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: Quicksand, 'Sans-serif';
+    width: 95%;
+  }

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Quicksand:wght@600&display=swap');
+*{
+  font-family: Quicksand, 'Sans-serif';
+  color: $second-color;
+}
+body{
+  background-color: $general-color;
+}
+
+.logoNav{
+    width: 150px;
+    height: 90px;
+    margin-right: 60px;
+    margin-left: 70px;    
+}
+
+.nav-item{
+  display: flex;
+  justify-content: space-between;
+    border-bottom: solid 1px white ;
+    border-radius: 2px;
+    font-family: Quicksand, 'Sans-serif';
+    transition: border-bottom 0.5, border-radius 0.5;
+    &:hover{
+        border-bottom: solid 1px $third-color ;        
+        border-radius: 4px;
+    }
+}
+
+.btUpload{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: $second-color;
+  margin-right: 2px;    
+  width: 300px;
+ 
+  #upLogo{
+    margin-left: 20px;
+  }
+  #uploadBt{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    color: $second-color;      
+    font-family: Quicksand, 'Sans-serif';
+    &:hover{
+      color: $third-color;
+      
+    }
+  }
+}
+
+#txtBusca{
+  width: 300px;
+  background-color: transparent;
+  color: $second-color;
+  text-align: center;  
+  font-family: Quicksand, 'Sans-serif';
+}
+#txtBusca::placeholder{
+  color: #5b5a5a;
+}
+#btBuscar{
+  margin-right: 70px;
+  width: 150px;
+}
+
+.footer {
+    background-color: $general-color;
+    height: 10vh;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    #linkGc {
+      text-decoration: none;
+      color: white;
+  
+      &:hover {
+        color: $third-color;
+      }
+    }  
+    .copyGC {
+      color: white;
+    }
+  }

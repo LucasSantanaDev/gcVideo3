@@ -1,0 +1,45 @@
+.container04{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    //justify-content: center; 
+    //background-color: red;
+    padding: 2%;
+    
+}
+
+#title{
+    margin-top: 5%;
+    width: 100%;    
+}
+
+.submitArea{  
+    //margin-top: 5%;
+    border: 2px solid $second-color;  
+    border-radius: 8px;
+    //padding: 20px;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    #txtNomeVideo, #txtUrlVideo, #txtTagsVideo, #txtCategoria{
+        width: 22%;
+        height: 45%;
+        border: solid 2px $second-color;
+        border-radius: 4px;
+        color: $general-color;
+    }
+
+
+    #txtNomeVideo::placeholder, #txtUrlVideo::placeholder, #txtTagsVideo::placeholder{
+        color: $general-color;
+    }
+   
+    #btEnviar{
+        border: solid 2px $second-color;
+        border-radius: 4px;
+        background-color: transparent;
+        width: 10%;
+    }
+}

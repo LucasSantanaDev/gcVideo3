@@ -1,0 +1,44 @@
+.container02{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;    
+}
+
+.logInArea{
+    margin-top: -10%;    
+    height: 60vh;    
+    text-align: center;
+    width: 600px;
+    border: 2px solid $second-color;
+    padding: 3%;    
+    border-radius: 10px;
+    .title{
+        margin-bottom: 20%;       
+    }
+    
+    #btAcesso{
+        text-align: center;
+        width: 100%;
+        background-color: transparent;
+        color: $second-color;
+        
+    }
+}
+// #txtUser, #txtPass {
+//     background-color: $;
+// }
+
+#txtUser::placeholder, #txtPass::placeholder{
+    color: $general-color;
+    
+  }
+
+  #aviso{
+    display: none;
+    margin-bottom: 500px;
+    font-size: 12px;
+    font-weight: 200;
+
+  }
